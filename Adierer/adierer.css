@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff; 
+}
+
+input, button, output {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #008cba; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+input {
+    background-color: #e6f7ff;
+ }
+
+button {
+    background-color: #008cba; 
+    color: white; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #005f5f; 
+}
+
+output {
+    background-color: #f0f8ff;
+    
+    color: #333333; 
+}

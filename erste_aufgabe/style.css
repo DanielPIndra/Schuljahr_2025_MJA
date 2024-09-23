@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(55, 255, 0, 0.462); 
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 85, 255);
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+div {
+    text-align: center;
+    height: 30vh;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+ ol {
+   
+    text-align: center;
+    list-style-position: inside;
+   
+}
+ul {
+    text-align: left;
+    font-size: 20px;
+    color: rgba(0, 255, 140, 0.574);
+}
