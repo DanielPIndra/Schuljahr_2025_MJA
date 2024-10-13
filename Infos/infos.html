@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Volleyball Info</title>
+    <!-- Verknüpfen von externer CSS-Datei -->
+    <link rel="stylesheet" href="infos.css">
+    <!-- Einbinden einer externen JavaScript-Datei -->
+    <script src="infos.js"></script>
+</head>
+<body>
+    <!-- Header-Bereich der Webseite -->
+    <header>
+        <!-- Hauptüberschrift der Seite -->
+        <h1>Alles über Volleyball</h1>
+        <!-- Navigationsleiste mit Links zu den verschiedenen Abschnitten der Seite -->
+        <nav>
+            <ul>
+                <li><a href="#history">Geschichte</a></li>
+                <li><a href="#rules">Regeln</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#lustig">Lustig</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Abschnitt über die Geschichte des Volleyballs -->
+    <section id="history">
+        <h2>Geschichte des Volleyballs</h2>
+        <p>Volleyball wurde 1895 von William G. Morgan in den USA erfunden.</p>
+        <!-- Link zu einer externen Quelle für mehr Informationen -->
+        <a href="https://de.wikipedia.org/wiki/Volleyball">
+            <button>Hier geht es zu kompletten Geschichte</button>
+        </a>
+    </section>
+
+    <!-- Abschnitt zu den Regeln des Volleyballs -->
+    <section id="rules">
+        <h2>Regeln des Volleyballs</h2>
+        <!-- Liste der wichtigsten Volleyball-Regeln -->
+        <ul>
+            <li>Ein Team besteht aus sechs Spielern.</li>
+            <li>Ein Spiel besteht aus bis zu fünf Sätzen.</li>
+            <li>Ein Punkt wird erzielt, wenn der Ball den Boden des gegnerischen Spielfelds berührt...</li>
+            <!-- Link zu einer externen Seite mit mehr Regel-Details -->
+            <li>
+                <a href="https://www.erima.de/corporate/news/blog/die-wichtigsten-volleyball-regeln-einfach-erkl%C3%A4rt">
+                    <button>Mehr Infos zu den Regeln</button>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Abschnitt über berühmte Volleyball-Teams -->
+    <section id="teams">
+        <h2>Berühmte Volleyball-Teams</h2>
+        <p>Hier sind einige der berühmtesten Volleyball-Teams der Welt.</p>
+        <ul>
+            <li>
+                <!-- Unterabschnitt über das US-amerikanische Team -->
+                <h3>Team USA</h3>
+                <p>Das US-amerikanische Volleyball-Team hat viele olympische Medaillen gewonnen.</p>
+            </li>
+            <li>
+                <!-- Unterabschnitt über das brasilianische Team -->
+                <h3>Team Brasilien</h3>
+                <p>Das brasilianische Volleyball-Team ist bekannt für seine herausragenden Spieler.</p>
+            </li>
+            <li>
+                <!-- Unterabschnitt über das russische Team -->
+                <h3>Team Russland</h3>
+                <p>Das russische Volleyball-Team hat viele Weltmeisterschaften gewonnen.</p>
+            </li>
+            <li>
+                <!-- Unterabschnitt über das japanische Team -->
+                <h3>Team Japan</h3>
+                <p>Das japanische Volleyball-Team ist bekannt für seine herausragenden Spieler, obwohl diese meistens klein sind.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Abschnitt mit Bildern zur Volleyball-Galerie -->
+    <section id="gallery">
+        <h2>Galerie</h2>
+        <!-- Bilder mit Alternativtexten -->
+        <img src="volleyball1.jpg" alt="Volleyball Spiel">
+        <img src="volleyball_feld.png" alt="Volleyball Feld">
+    </section>
+
+    <!-- Lustiger Bereich mit interaktiven Buttons -->
+    <section id="lustig">
+        <!-- Button zum Ändern der Farbe (Funktion in der JS-Datei) -->
+        <button id="colorButton">Farbe ändern</button>
+        <!-- Button zum Anzeigen eines Bildes (Funktion in der JS-Datei) -->
+        <button id="showButton" onclick="showButton()">Spawne ein Bild</button>
+        <!-- Button zum Löschen des Bildes (Funktion in der JS-Datei) -->
+        <button id="deleteButton" onclick="hideButton()">Lösche das Bild</button>
+        <!-- Bild, das durch die Funktionen in der JS-Datei kontrolliert wird -->
+        <img id="bild" class="bild" src="volleyball1.jpg" alt="">
+        <!-- Button zum Auslösen eines Alerts (Funktion in der JS-Datei) -->
+        <button onclick="showAlert()">Zeige Alert</button>
+        <!-- Button zum Ändern des Texts (Funktion in der JS-Datei) -->
+        <button onclick="changeText()">Ändere Text</button>
+        <!-- Text, der durch die Funktion in der JS-Datei geändert wird -->
+        <h1 id="text">ändern</h1>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <!-- Eingabefeld für den Namen -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <!-- Eingabefeld für die E-Mail-Adresse -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <!-- Button zum Absenden des Formulars -->
+            <input type="submit" value="Senden">
+        </form>
+    </section>
+
+    <!-- Footer-Bereich der Seite -->
+    <footer>
+        <p>&copy; 2023 Volleyball Info</p>
+    </footer>
+</body>
+</html>

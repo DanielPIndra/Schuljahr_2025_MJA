@@ -1,0 +1,126 @@
+/* Setzt die Standardschriftart auf Arial oder, wenn nicht verfügbar, eine generische Sans-Serif-Schrift */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Entfernt den Standardseitenrand */
+    padding: 0; /* Entfernt die Standardseitenauffüllung */
+    background-color: #f4f4f4; /* Setzt eine hellgraue Hintergrundfarbe */
+}
+
+/* Stile für den Header-Bereich */
+header {
+    background-color: #333; /* Dunkler Hintergrund für den Header */
+    color: white; /* Weißer Text im Header */
+    padding: 10px 0; /* Abstand oben und unten von 10px, aber kein seitlicher Abstand */
+    text-align: center; /* Zentriert den Text */
+}
+
+/* Entfernt die Standardaufzählungszeichen von Navigationslisten */
+nav ul {
+    list-style: none; /* Keine Aufzählungszeichen für die Listenelemente */
+    padding: 0; /* Kein Innenabstand */
+}
+
+/* Stile für die Listenelemente in der Navigation */
+nav ul li {
+    display: inline; /* Zeigt die Listenelemente horizontal anstatt vertikal an */
+    margin: 0 10px; /* Abstand zwischen den Listenelementen */
+}
+
+/* Stile für die Links in der Navigation */
+nav ul li a {
+    color: white; /* Weißer Text für die Links */
+    text-decoration: none; /* Entfernt die Unterstreichung von Links */
+}
+
+/* Grundlegende Stile für alle Abschnitte der Seite */
+section {
+    padding: 20px; /* Innenabstand von 20px */
+    margin: 20px; /* Außenabstand von 20px, um Platz zwischen den Abschnitten zu schaffen */
+    background-color: white; /* Weißer Hintergrund für die Abschnitte */
+    border-radius: 5px; /* Leicht abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Weicher Schatten um den Abschnitt herum */
+}
+
+/* Stile für die Hauptüberschriften (h1, h2) */
+h1, h2 {
+    color: #333; /* Dunkelgraue Farbe für die Überschriften */
+}
+
+/* Stile für den Footer */
+footer {
+    text-align: center; /* Zentriert den Text im Footer */
+    padding: 1px 1px; /* Minimaler Abstand innerhalb des Footers */
+    background-color: #333; /* Dunkler Hintergrund */
+    color: white; /* Weißer Text */
+    position: fixed; /* Fixiert den Footer am unteren Rand der Seite */
+    width: 100%; /* Der Footer nimmt die gesamte Seitenbreite ein */
+    bottom: 0; /* Positioniert den Footer am unteren Rand des Fensters */
+}
+
+/* Grundlegende Layout-Stile für Formulare */
+form {
+    display: flex; /* Verwendet ein flexibles Layout für das Formular */
+    flex-direction: column; /* Stellt die Formularfelder untereinander */
+}
+
+/* Stile für die Formularbeschriftungen */
+form label {
+    margin: 5px 0; /* Abstand oben und unten von 5px */
+}
+
+/* Stile für die Eingabefelder des Formulars */
+form input[type="text"], form input[type="email"] {
+    padding: 10px; /* Innenabstand innerhalb der Eingabefelder */
+    margin: 5px 0; /* Außenabstand von 5px oben und unten */
+    border: 1px solid #ccc; /* Graue Umrandung */
+    border-radius: 5px; /* Leicht abgerundete Ecken */
+}
+
+/* Stile für den Senden-Button im Formular */
+form input[type="submit"] {
+    padding: 10px; /* Innenabstand */
+    background-color: #333; /* Dunkler Hintergrund */
+    color: white; /* Weißer Text */
+    border: none; /* Keine Umrandung */
+    border-radius: 5px; /* Leicht abgerundete Ecken */
+    cursor: pointer; /* Zeigt beim Hovern den Zeiger an */
+}
+
+/* Hover-Effekt für den Senden-Button */
+form input[type="submit"]:hover {
+    background-color: #555; /* Ändert die Hintergrundfarbe, wenn der Button gehovt wird */
+}
+
+/* Stile für Bilder */
+img {
+    max-width: 50%; /* Bilder dürfen nicht größer als 50% der Seitenbreite sein */
+    height: auto; /* Die Höhe wird proportional zur Breite angepasst */
+    display: block; /* Bilder werden als Blockelemente angezeigt, damit sie untereinander stehen */
+    margin: 10px 0; /* Abstand oben und unten von 10px */
+}
+
+/* Stile für Buttons */
+button {
+    background-color: #000000b0; /* Schwarzer Hintergrund mit leichter Transparenz */
+    border: none; /* Keine Umrandung */
+    color: white; /* Weißer Text */
+    padding: 10px 28px; /* Innenabstand um den Text herum */
+    text-align: center; /* Zentriert den Text */
+    text-decoration: none; /* Entfernt die Standard-Textdekoration */
+    display: inline-block; /* Macht den Button zu einem Inline-Block-Element */
+    font-size: 8px; /* Kleinere Schriftgröße */
+    margin: 6px 4px; /* Außenabstand um den Button */
+    cursor: pointer; /* Zeigt beim Hovern den Zeiger an */
+    border-radius: 10px; /* Rundet die Ecken des Buttons ab */
+    transition: background-color 0.3s ease; /* Fügt einen Übergangseffekt hinzu, wenn die Hintergrundfarbe sich ändert */
+}
+
+/* Hover-Effekt für Buttons */
+button:hover {
+    background-color: #4eab92d2; /* Ändert die Hintergrundfarbe bei Hover zu einem sanften Grünton */
+}
+
+/* Klasse, die das Bild versteckt */
+.bild {
+    display: none; /* Das Bild ist standardmäßig ausgeblendet */
+}
