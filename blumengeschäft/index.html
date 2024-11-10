@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer >  </script>
+</head>
+<body>
+    <h1>Blumengeschäft </h1><br>
+   <label for="Name">NAME:</label>
+     <input type="text" placeholder="Max Mustermann">
+     <br>
+     <label for="email">EMAIL:</label>
+     <input type="text" placeholder="irgendwas@spengergasse">
+        <br>
+        <label for="produkt">PRODUKT:</label>
+        <select name="" id="Dropdown" onchange="Preis()">
+            <option name="Rosen" value="1.50"  id="Rose" >Rosen</option>
+            <option name="Rosen" value="2.00"  id="Tulpe">Tulpen</option>
+            <option name="Rosen" value="2.50"  id="Sonnenblume">Sonnenblumen</option>
+            <option name="Rosen" value="1.20"  id="Lilie">Lilien</option>	
+        </select>
+        <label for="PREIS" id="priceDisplay">#PREIS</label>
+        <button onclick="Hinzufügen()">Hinzufügen</button> <br>
+        <textarea name="" placeholder="Hallo, 
+Ich habe noch folgende Anmerkungen " style="width: 250px; height: 100px;"></textarea> 
+<br>
+        <button>Bestellen</button>
+        <br>
+        <br>
+        <div class="warenkorb">
+            <h2>Warenkorb</h2>
+            <table id="table" border="20">
+                <tr>
+                    <th>Produkt</th>
+                    <th>Preis</th>
+                </tr>
+                
+            </table>
+
+        </div>
+       
+        <p id="Gesamtsumme"></p>
+</body>
+</html>
