@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blumengeschäft</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Blumengeschäft</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="username" name="name" placeholder="Max Mustermann"><br><br>
+    
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" placeholder="irgendwas@spengergasse.at"><br><br>
+    
+        <label for="product">Produkte:</label>
+        <select id="product" name="product" onclick="selection()">
+            <option value="1.50">Sonnenblume</option>
+            <option value="2.00">Rose</option>
+            <option value="1.20">Tulpe</option>
+            <option value="2.00">Lilie</option>
+        </select >  
+        <label id="output"></label> <button type="button" onclick="add()">Hinzufügen</button><br>
+        <textarea id="message" name="message" cols="50" rows="12">Hallo,
+ich habe noch folgende Anmerkung:</textarea><br> <br>
+        
+    <button type="submit" onclick="alertFunction(event)">Bestellen</button>
+    <table id="table" >
+        <tr>
+            <th>Produkte</th>
+            <th>Preis</th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Summe:</td>
+            <td id="betrag"></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
